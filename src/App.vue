@@ -6,19 +6,22 @@
     <ul class="menu">
       <li><router-link to="/">Home</router-link></li>
       <li><router-link to="/about">About</router-link></li>
+      <li><router-link to="/about">Project</router-link></li>
+      <li><router-link to="/about">Skill</router-link></li>
+      <li><router-link to="/about">Contact</router-link></li>
     </ul>
   </nav>
   <router-view/>
 </template>
 
 <style>
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 body {
   background: #0f0f0f;
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #ffffff;
@@ -44,12 +47,13 @@ nav .menu {
 }
 
 nav h1 {
-  font-size: 1.6em;
+  font-size: 1.8em;
   color: #fff;
+  padding-bottom: 15px
 }
 
 nav h1 span {
-  font-size: 1.6em;
+  font-size: 1.8em;
   color: #42b983;
 }
 

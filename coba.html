@@ -6,6 +6,80 @@
     <title>Navbar Web</title>
     <link rel="stylesheet" href="src/assets/css/style.css" />
   </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .projects-section {
+      margin-top: 50px;
+    }
+
+    .projects-section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #35495e;
+    }
+
+    .project {
+      display: flex;
+      margin-bottom: 40px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    .project img {
+      width: 300px;
+      height: auto;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    .project-content {
+      padding: 20px;
+    }
+
+    .project-content h3 {
+      margin-top: 0;
+      color: #42b883;
+    }
+
+    .project-content p {
+      margin: 10px 0;
+    }
+
+    .project-content .technologies {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .project-content .technologies li {
+      display: inline;
+      margin-right: 10px;
+      background-color: #42b883;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 3px;
+    }
+
+    .project-content .project-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: #42b883;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 
   <body>
     <nav>
@@ -19,5 +93,61 @@
         <li><a href="#">Kontak</a></li>
       </ul>
     </nav>
+    <div class="container">
+      <section class="projects-section">
+        <h2>My Projects</h2>
+
+        <div class="project">
+          <img src="src/assets/obito.jpg" alt="Project Image" />
+          <div class="project-content">
+            <h3>Project Title</h3>
+            <p>
+              Short description of the project. What was the goal? What did you
+              do?
+            </p>
+            <ul class="technologies">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Vue.js</li>
+            </ul>
+            <a
+              href="https://github.com/yourusername/yourproject"
+              class="project-link"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+        </div>
+
+        <!-- Repeat for more projects -->
+        <!-- Example another project -->
+        <div class="project">
+          <img
+            src="path/to/another-project-image.jpg"
+            alt="Another Project Image"
+          />
+          <div class="project-content">
+            <h3>Another Project Title</h3>
+            <p>
+              Short description of this project. What was the goal? What did you
+              do?
+            </p>
+            <ul class="technologies">
+              <li>Python</li>
+              <li>Django</li>
+              <li>JavaScript</li>
+              <li>React</li>
+            </ul>
+            <a
+              href="https://github.com/yourusername/anotherproject"
+              class="project-link"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
