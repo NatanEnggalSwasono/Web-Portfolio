@@ -38,6 +38,7 @@ nav {
   align-items: center;
   height: 70px;
   background: #0f0f0f;
+  z-index: 1000;
 }
 
 nav .menu {

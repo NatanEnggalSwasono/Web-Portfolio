@@ -3,6 +3,9 @@
     <HelloWorld/>
     <img alt="Vue logo" src="../assets/Tobi_Akatsuki.png">
   </div>
+  <div class="about">
+    <AboutMe/>
+  </div>
   <div class="project">
     <Projects/>
   </div>
@@ -28,12 +31,14 @@
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
 import Projects from '@/components/Projects.vue'
+import AboutMe from '@/components/AboutMe.vue'
 
 export default {
   name: 'HomeView',
   components: {
     HelloWorld,
-    Projects
+    Projects,
+    AboutMe
   }
 }
 </script>
